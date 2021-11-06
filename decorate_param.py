@@ -11,10 +11,8 @@ def decorate(arg):
             if args in memo and memo_counter[args] == arg:
                 memo.pop(args)
                 memo_counter.pop(args)
-                pass
             elif args in memo:
                 memo_counter[args] += 1
-                pass
 
             print(f'Run with args={args}, memo={memo}')
             if args not in memo:
